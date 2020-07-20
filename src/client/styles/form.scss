@@ -1,0 +1,56 @@
+@import 'colors';
+
+form {
+  border: 1px solid $gray;
+  border-radius: 3px;
+  padding: 40px;
+}
+
+input {
+  padding: 5px 20px;
+  width: 100%;
+  line-height: 16px;
+  margin: 10px 0;
+}
+
+.button {
+  background-color: $lt-blue;
+  border: none;
+  color: $white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+#name {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid $lt-blue;
+}
+
+#urlExample {
+  font-size: 12px;
+}
+
+#results-container {
+  #results {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.card {
+  box-shadow: 0 0 20px 3px $lt-blue, 0 0 20px 3px rgba(0, 0, 0, 0.24);
+  border-top: solid 10px $lt-blue;
+  height: auto;
+  margin: 0 auto;
+  position: relative;
+  width: 600px;
+  padding: 20px;
+  margin: 20px;
+  background-color: $white;
+}

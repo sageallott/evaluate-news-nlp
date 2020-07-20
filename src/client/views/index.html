@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Evaluate News NLP</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <header>
+      <div class="">
+        Logo
+      </div>
+      <div class="">
+        navigation
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <form class="" onsubmit="return Client.handleSubmit(event)">
+          <label>Enter news article URL you would like to evaluate:</label>
+          <h5 id="urlExample">
+            ex.
+            https://www.nytimes.com/2020/07/15/technology/twitter-hack-bill-gates-elon-musk.html
+          </h5>
+          <input
+            id="name"
+            type="text"
+            name="input"
+            value=""
+            placeholder="https://"
+            onfocus="this.value=''"
+          />
+          <input
+            class="button"
+            type="submit"
+            name=""
+            value="submit"
+            onclick="return Client.handleSubmit(event)"
+            onsubmit="return Client.handleSubmit(event)"
+          />
+        </form>
+      </section>
+
+      <section id="results-container">
+        <strong>URL Results:</strong>
+        <div id="results"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>This is a footer</p>
+    </footer>
+    <script>
+      // Check that service workers are supported
+      if ('serviceWorker' in navigator) {
+        // Use the window load event to keep the page load performant
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    </script>
+  </body>
+</html>

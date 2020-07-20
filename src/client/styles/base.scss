@@ -1,0 +1,22 @@
+@import 'colors';
+
+html {
+  font-family: 'Heebo', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: $lt-blue;
+}
+
+main {
+  flex: 2;
+  margin: 0 auto;
+}
+
+section {
+  max-width: 800px;
+  margin: 50px auto;
+}

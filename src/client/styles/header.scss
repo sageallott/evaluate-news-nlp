@@ -1,0 +1,10 @@
+@import 'colors';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background-color: $lt-blue;
+  color: $white;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
+}
