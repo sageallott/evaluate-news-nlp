@@ -1,7 +1,8 @@
 @import 'colors';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@300&display=swap');
 
 html {
-  font-family: 'Heebo', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 body {
@@ -19,4 +20,8 @@ main {
 section {
   max-width: 800px;
   margin: 50px auto;
+}
+
+label{
+  color: #6a6a6a;
 }

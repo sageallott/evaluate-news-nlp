@@ -3,23 +3,19 @@
   <head>
     <meta charset="utf-8" />
     <title>Evaluate News NLP</title>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet"/>
   </head>
 
   <body>
-    <header>
-      <div class="">
-        Logo
-      </div>
-      <div class="">
-        navigation
-      </div>
+    <header> 
+      <div>
+        <h1>News Story Analyzer</h1> 
+      </div>     
     </header>
 
     <main>
       <section>
         <form class="" onsubmit="return Client.handleSubmit(event)">
-          <label>Enter news article URL you would like to evaluate:</label>
+          <label>Enter the news article URL you would like to evaluate:</label>
           <h5 id="urlExample">
             ex.
             https://www.nytimes.com/2020/07/15/technology/twitter-hack-bill-gates-elon-musk.html
@@ -44,13 +40,13 @@
       </section>
 
       <section id="results-container">
-        <strong>URL Results:</strong>
+        <strong class="url-results">URL Results:</strong>
         <div id="results"></div>
       </section>
     </main>
 
     <footer>
-      <p>This is a footer</p>
+      <p>Sage Allott<br> Boston,MA</p>
     </footer>
     <script>
       // Check that service workers are supported
